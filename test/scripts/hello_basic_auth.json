@@ -8,6 +8,12 @@
   "scenarios": [
     {
       "flow": [
+        {"get": {"url": "/protected", "headers": {"Authorization": "Basic bGVvOnNlY3JldA=="}}},
+        {"get": {"url": "/protected"}}
+      ]
+    },
+    {
+      "flow": [
         {"get": {"url": "/protected", "auth": {"user": "leo", "pass": "secret"}}},
         {"get": {"url": "/protected"}}
       ]
